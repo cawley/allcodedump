@@ -1,0 +1,25 @@
+import java.util.*;
+public class Albertio{
+	public static void main(String[] args){
+      new Albertio();
+      ArrayList<String> a = new ArrayList<>();
+      System.out.println(listString(a).toString());
+    }
+      
+      public static Object listString(ArrayList list){
+        int c = 0;
+        for(int i = list.size()-1; i >= 0; i--){
+          if(list.get(i) instanceof String){
+            if(((String) list.get(i)).length()<10){
+              if(c == 1){
+                return list.get(i);
+                
+              }
+            }
+          }
+        }
+      
+      
+    return null;
+}
+}
