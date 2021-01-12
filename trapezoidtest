@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class TrapezoidTest {
+
+	 public static void main(String[] args){
+		
+		Scanner a = new Scanner(System.in);
+		System.out.println("Enter base 1 length");
+		double base1 = a.nextDouble();
+		System.out.println("Enter base 2 length");
+		double base2 = a.nextDouble();
+		System.out.println("Enter the height");
+		double height = a.nextDouble();
+		
+		Trapezoid b = new Trapezoid(base1, base2, height);
+		double gbase1 = b.getBaseLength1();
+		double gbase2 = b.getBaseLength2();
+		double area1 = b.getArea();
+		
+		System.out.println(area1);
+		
+		a.close();
+		
+	
+		
+	}
+
+}
