@@ -1,0 +1,26 @@
+
+public class Trapezoid{
+	private double baseLength1;
+	private double baseLength2;
+	private double height;
+	public Trapezoid (double b1, double b2, double h) {
+		baseLength1 = b1;
+		baseLength2 = b2;
+		height = h;
+	}
+	public double getBaseLength1() {
+		return baseLength1;
+	}
+	public double getBaseLength2() {
+	return baseLength2;
+	}
+	public double getArea() {
+		double base = baseLength1 + baseLength2; 
+		double baseAvg = base / 2.0;		
+		double area = baseAvg * height;
+      return area;
+	
+    }
+}
+
+	
